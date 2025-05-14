@@ -178,8 +178,18 @@
         .footer a:hover {
             text-decoration: underline;
         }
-    </style>
 
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .skill-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 
 <body>
@@ -193,6 +203,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
@@ -221,22 +232,84 @@
     <!-- Sobre mí -->
     <section id="sobre-mi" class="full-width-section" data-aos="fade-up">
         <h2 class="section-title">Sobre Mí</h2>
-        <p>
-            Soy un desarrollador de software apasionado por la tecnología y la innovación.
-            Tengo experiencia en programación y desarrollo web, trabajando con tecnologías como PHP, Laravel,
-            React y bases de datos entre otras. Me especializo en crear soluciones eficientes y escalables,
-            siempre buscando mejorar la experiencia del usuario y la optimización del rendimiento.
-            Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente.
-        </p>
+        <p>Soy un desarrollador de software apasionado por la tecnología y la innovación. Tengo experiencia en
+            programación y desarrollo web, trabajando con tecnologías como PHP, Laravel, React y bases de datos entre
+            otras. Me especializo en crear soluciones eficientes y escalables, siempre buscando mejorar la experiencia
+            del usuario y la optimización del rendimiento. Me encanta aprender nuevas tecnologías y enfrentar desafíos
+            que me permitan crecer profesionalmente.</p>
     </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="full-width-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                        class="skill-icon">
+                    <p>PHP</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                        class="skill-icon">
+                    <p>HTML5</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                        class="skill-icon">
+                    <p>CSS3</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" class="skill-icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt="Laravel"
+                        class="skill-icon">
+                    <p>Laravel</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                        class="skill-icon">
+                    <p>React</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" class="skill-icon">
+                    <p>Python</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS"
+                        class="skill-icon">
+                    <p>AWS</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                        class="skill-icon">
+                    <p>MySQL</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby"
+                        class="skill-icon">
+                    <p>Ruby</p>
+                </div>
+                <div class="col-4 col-md-2" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON"
+                        class="skill-icon">
+                    <p>JSON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Proyectos -->
     <section id="proyectos" class="full-width-section" data-aos="fade-left">
         <div class="container">
             <h2 class="section-title">Proyectos</h2>
             <div class="row g-4">
-
-                <!-- Proyecto 1 - Video -->
+                <!-- Proyecto 1 -->
                 <div class="col-md-4">
                     <div class="card">
                         <video width="100%" controls>
@@ -253,7 +326,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 2 -->
+                <!-- Proyectos 2 y 3 -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 2">
@@ -265,7 +338,6 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 3 -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 3">
@@ -276,7 +348,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -284,26 +355,20 @@
     <!-- Contacto -->
     <section id="contacto" class="contact-section" data-aos="fade-up">
         <div class="container">
-            <h2>Contacto</h2>
-            <form>
-                <div class="mb-3">
-                    <input type="text" placeholder="Tu nombre" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" placeholder="Tu correo" required>
-                </div>
-                <div class="mb-3">
-                    <textarea rows="5" placeholder="Tu mensaje" required></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar</button>
+            <h2 class="section-title">Contacto</h2>
+            <form action="https://formsubmit.co/luciano.rodon@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar mensaje</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Luciano Rodón. Todos los derechos reservados. | <a href="https://github.com/LucianoRodon"
-                target="_blank">GitHub</a></p>
+        <p>&copy; Luciano Rodón. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ y mucho café.</p>
     </footer>
 
     <!-- Scripts -->
@@ -311,29 +376,32 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        // Inicializar AOS
         AOS.init();
 
-        // Inicializar Partículas
-        particlesJS("particles-js", {
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Particles.js config
+        particlesJS('particles-js', {
             particles: {
-                number: { value: 80 },
-                color: { value: "#ffffff" },
+                number: { value: 50 },
+                color: { value: "#00bcd4" },
                 shape: { type: "circle" },
                 opacity: { value: 0.5 },
                 size: { value: 3 },
                 line_linked: {
                     enable: true,
                     distance: 150,
-                    color: "#ffffff",
+                    color: "#00bcd4",
                     opacity: 0.4,
                     width: 1
                 },
                 move: {
                     enable: true,
-                    speed: 4,
-                    direction: "none",
-                    out_mode: "out"
+                    speed: 3
                 }
             },
             interactivity: {
@@ -347,16 +415,6 @@
                 }
             },
             retina_detect: true
-        });
-
-        // Navbar transparente que se vuelve sólida al hacer scroll
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
         });
     </script>
 </body>
