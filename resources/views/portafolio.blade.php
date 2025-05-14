@@ -254,7 +254,7 @@
                     title="Abrir Curriculum Vitae">
                     <i class="fas fa-file-alt"></i>
                 </a>
-
+                <br><br>
             </div>
             <a href="#sobre-mi" class="scroll-down">
                 <i class="fas fa-chevron-down"></i>
