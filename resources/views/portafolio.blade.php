@@ -189,6 +189,31 @@
         .skill-icon:hover {
             transform: scale(1.2);
         }
+
+        .scroll-down {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 2rem;
+            color: #00ffff;
+            animation: bounce 2s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        .scroll-down:hover {
+            color: #00cccc;
+        }
     </style>
 </head>
 
@@ -217,7 +242,7 @@
         </div>
         <div class="container text-center" data-aos="fade-up">
             <h1 class="hero-title">¡Hola! Soy Luciano Rodón</h1>
-            <p class="hero-subtitle">Desarrollador de Software | Apasionado por la tecnología</p>
+            <p class="hero-subtitle">Software Developer | Apasionado por la tecnología</p>
             <div class="social-links" data-aos="fade-in" data-aos-delay="300">
                 <a href="https://www.linkedin.com/in/luciano-rodon" target="_blank" class="social-icon"><i
                         class="fab fa-linkedin-in"></i></a>
@@ -225,19 +250,41 @@
                         class="fab fa-github"></i></a>
                 <a href="https://twitter.com/LuchoRodon" target="_blank" class="social-icon"><i
                         class="fab fa-twitter"></i></a>
+                <a href="{{ asset('cv/CV_Luciano_Rodon.pdf') }}" target="_blank" class="social-icon"
+                    title="Abrir Curriculum Vitae">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+
             </div>
+            <a href="#sobre-mi" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+
         </div>
     </section>
 
     <!-- Sobre mí -->
     <section id="sobre-mi" class="full-width-section" data-aos="fade-up">
-        <h2 class="section-title">Sobre Mí</h2>
-        <p>Soy un desarrollador de software apasionado por la tecnología y la innovación. Tengo experiencia en
-            programación y desarrollo web, trabajando con tecnologías como PHP, Laravel, React y bases de datos entre
-            otras. Me especializo en crear soluciones eficientes y escalables, siempre buscando mejorar la experiencia
-            del usuario y la optimización del rendimiento. Me encanta aprender nuevas tecnologías y enfrentar desafíos
-            que me permitan crecer profesionalmente.</p>
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p>
+                Soy Luciano Rodon, desarrollador de software con sólida formación académica y una profunda pasión por la
+                tecnología. Me especializo en el desarrollo web utilizando herramientas como PHP, Laravel, React y
+                MySQL, creando soluciones robustas, escalables y orientadas al usuario.
+            </p>
+            <p>
+                Me destaco por mi compromiso con el aprendizaje continuo, la escritura de código limpio y la capacidad
+                de adaptarme rápidamente a nuevos entornos y desafíos. Disfruto trabajar en equipo, aportar ideas y
+                participar activamente en cada etapa del desarrollo para lograr productos de calidad.
+            </p>
+            <p>
+                Actualmente busco seguir creciendo profesionalmente, aportando mis conocimientos en proyectos que
+                generen un impacto real y me permitan seguir desarrollando mis habilidades técnicas y humanas.
+            </p>
+        </div>
     </section>
+
+
 
     <!-- Habilidades -->
     <section id="habilidades" class="full-width-section" data-aos="fade-up">
@@ -305,46 +352,52 @@
 
 
     <!-- Proyectos -->
-    <section id="proyectos" class="full-width-section" data-aos="fade-left">
+    <section id="proyectos" class="full-width-section" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Proyectos</h2>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <!-- Proyecto 1 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <video width="100%" controls>
-                            <source src="{{ asset('video/Presentacion.mp4') }}" type="video/mp4">
-                            Tu navegador no soporta el video.
-                        </video>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Plataforma de Gestión Académica</h5>
-                            <p class="card-text">Este sistema permite gestionar la carga horaria de docentes,
-                                optimizando la asignación de materias y horarios de forma eficiente.</p>
-                            <a href="{{ asset('video/Presentacion.mp4') }}" class="btn btn-primary" target="_blank">Ver
-                                en pantalla completa</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <video class="rounded-top" controls>
+                                <source src="video/Presentacion.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Gestión Académica</h5>
+                            <p class="card-text">Plataforma para administrar la carga horaria docente, mejorar la
+                                asignación de materias y automatizar procesos.</p>
+                            <a href="video/Presentacion.mp4" target="_blank" class="btn btn-primary mt-auto">Ver
+                                demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyectos 2 y 3 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción breve del proyecto 2.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img/proyecto2.png" alt="Proyecto 2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sistema de Inventario</h5>
+                            <p class="card-text">Aplicación web desarrollada con Laravel y MySQL para gestionar
+                                productos, stock y reportes en tiempo real.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Ver más</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proyecto 3</h5>
-                            <p class="card-text">Descripción breve del proyecto 3.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <!-- Proyecto 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img/proyecto3.png" alt="Proyecto 3" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Portfolio Personal</h5>
+                            <p class="card-text">Sitio web responsive hecho en HTML, CSS y Bootstrap para mostrar
+                                experiencia, proyectos y contacto.</p>
+                            <a href="https://ronasosc.xyz" target="_blank" class="btn btn-primary mt-auto">Ir al
+                                sitio</a>
                         </div>
                     </div>
                 </div>
@@ -352,18 +405,27 @@
         </div>
     </section>
 
+
     <!-- Contacto -->
     <section id="contacto" class="contact-section" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Contacto</h2>
-            <form action="https://formsubmit.co/luciano.rodon@gmail.com" method="POST">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu email" required>
-                <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-                <button type="submit" class="btn">Enviar mensaje</button>
+            <p class="mb-4">¿Querés ponerte en contacto conmigo? Completá el siguiente formulario y te responderé lo
+                antes posible.</p>
+            <form action="mailto:luchorodon@gmail.com" method="POST" enctype="text/plain">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                        <input type="text" name="asunto" placeholder="Asunto" required>
+                        <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </div>
+                </div>
             </form>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="footer">
