@@ -370,9 +370,26 @@
     <section id="proyectos" class="full-width-section" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Proyectos</h2>
+            <br>
             <div class="row g-4 justify-content-center">
-                <!-- Proyecto 1 -->
-                <div class="col-md-6 col-lg-4">
+
+                <!-- Proyecto 1 (Portfolio Personal) -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/Cel.png" alt="Captura del Portfolio" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Portfolio Personal</h5>
+                            <p class="card-text">Sitio web responsive hecho con <strong>HTML, CSS, Bootstrap,
+                                    Laravel</strong> y animaciones visuales personalizadas. Refleja mi experiencia,
+                                proyectos y contacto profesional.</p>
+                            <a href="https://ronasosc.xyz" target="_blank" class="btn btn-primary mt-auto">Ir al
+                                sitio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 (Gestión Académica) -->
+                <div class="col-md-4 col-lg-3.3">
                     <div class="card h-100">
                         <div class="ratio ratio-16x9">
                             <video class="rounded-top" controls>
@@ -382,44 +399,18 @@
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Gestión Académica</h5>
-                            <p class="card-text">Plataforma para administrar la carga horaria docente, mejorar la
-                                asignación de materias y automatizar procesos.</p>
+                            <p class="card-text">Plataforma desarrollada con <strong>PHP, MySQL, HTML, CSS y
+                                    JavaScript</strong> para administrar carga horaria docente, automatizar procesos
+                                académicos y optimizar la asignación de materias.</p>
                             <a href="video/Presentacion.mp4" target="_blank" class="btn btn-primary mt-auto">Ver
                                 demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyecto 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="img/proyecto2.png" alt="Proyecto 2" class="card-img-top">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Sistema de Inventario</h5>
-                            <p class="card-text">Aplicación web desarrollada con Laravel y MySQL para gestionar
-                                productos, stock y reportes en tiempo real.</p>
-                            <a href="#" class="btn btn-primary mt-auto">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="img/proyecto3.png" alt="Proyecto 3" class="card-img-top">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Portfolio Personal</h5>
-                            <p class="card-text">Sitio web responsive hecho en HTML, CSS y Bootstrap para mostrar
-                                experiencia, proyectos y contacto.</p>
-                            <a href="https://ronasosc.xyz" target="_blank" class="btn btn-primary mt-auto">Ir al
-                                sitio</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
 
     <!-- Contacto -->
     <section id="contacto" class="contact-section" data-aos="fade-up">
