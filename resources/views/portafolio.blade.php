@@ -266,23 +266,38 @@
     <!-- Sobre mí -->
     <section id="sobre-mi" class="full-width-section" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
-            <p>
-                Soy Luciano Rodon, desarrollador de software con sólida formación académica y una profunda pasión por la
-                tecnología. Me especializo en el desarrollo web utilizando herramientas como PHP, Laravel, React y
-                MySQL, creando soluciones robustas, escalables y orientadas al usuario.
-            </p>
-            <p>
-                Me destaco por mi compromiso con el aprendizaje continuo, la escritura de código limpio y la capacidad
-                de adaptarme rápidamente a nuevos entornos y desafíos. Disfruto trabajar en equipo, aportar ideas y
-                participar activamente en cada etapa del desarrollo para lograr productos de calidad.
-            </p>
-            <p>
-                Actualmente busco seguir creciendo profesionalmente, aportando mis conocimientos en proyectos que
-                generen un impacto real y me permitan seguir desarrollando mis habilidades técnicas y humanas.
-            </p>
+
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="{{ asset('img/yo.jpg') }}" alt="Luciano Rodon" class="img-fluid rounded-circle shadow-lg"
+                        style="max-width: 250px;">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="section-title text-center mb-5">Sobre Mí</h2>
+                    <p>
+                        Soy Luciano Rodon, desarrollador de software con sólida formación académica y una profunda
+                        pasión por la
+                        tecnología. Me especializo en el desarrollo web utilizando herramientas como PHP, Laravel, React
+                        y
+                        MySQL, creando soluciones robustas, escalables y orientadas al usuario.
+                    </p>
+                    <p>
+                        Me destaco por mi compromiso con el aprendizaje continuo, la escritura de código limpio y la
+                        capacidad
+                        de adaptarme rápidamente a nuevos entornos y desafíos. Disfruto trabajar en equipo, aportar
+                        ideas y
+                        participar activamente en cada etapa del desarrollo para lograr productos de calidad.
+                    </p>
+                    <p>
+                        Actualmente busco seguir creciendo profesionalmente, aportando mis conocimientos en proyectos
+                        que
+                        generen un impacto real y me permitan seguir desarrollando mis habilidades técnicas y humanas.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+
 
 
 
